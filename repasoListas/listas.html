@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>listas Cheveres</title>
+</head>
+<style>
+    .resume {
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        list-style-position: none;
+    }
+</style>
+<body>
+    <main>
+        <details open class="resume">
+            <summary>
+                lista1
+            </summary>
+            <ol>
+                <li>Hola1</li>
+                <li>Como1</li>
+                <li>Estas1</li>
+                <li>Aqui1</li>
+                <li>En la vida1</li>
+                <li>De vida1</li>
+            </ol>
+        </details>
+        <details class="resume">
+            <summary>
+                lista2
+            </summary>
+            <ol>
+                <li>Hola2</li>
+                <li>Como2</li>
+                <li>Estas2</li>
+                <li>Aqui2</li>
+                <li>En la vida2</li>
+                <li>De vida2</li>
+            </ol>
+        </details>
+        <details class="resume">
+            <summary>
+                lista3
+            </summary>
+            <ol>
+                <li>Hola3</li>
+                <li>Como3</li>
+                <li>Estas3</li>
+                <li>Aqui3</li>
+                <li>En la vida3</li>
+                <li>De vida3</li>
+            </ol>
+        </details>
+        <details class="resume">
+            <summary>
+                lista4
+            </summary>
+            <ol>
+                <li>Hola4</li>
+                <li>Como4</li>
+                <li>Estas4</li>
+                <li>Aqui4</li>
+                <li>En la vida4</li>
+                <li>De vida4</li>
+            </ol>
+        </details>
+    </main>
+    <script>
+        const $detailsList = document.querySelectorAll('details')
+        $detailsList.forEach(e => {
+            e.querySelector('summary').addEventListener('click', expand)
+        })
+
+        function expand () {
+            $detailsList.forEach(e => {
+                e.removeAttribute('open');
+            })
+        }
+    </script>
+</body>
+</html>

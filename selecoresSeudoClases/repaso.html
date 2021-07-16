@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>repasoSeudoementos</title>
+    <style>
+        main {
+            height: 100px;
+        }
+        h4 {
+           margin: 0;
+           text-align: center;
+           font-family: Arial, Helvetica, sans-serif;
+        }
+        .cuadro {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 80px;
+            height: 80px;
+            background-color: #FFEAC9;
+            margin: 100px auto;
+            border-radius: 10%;
+            padding: 10px;
+            position: relative;
+        }
+        .cuadro::after {
+            content:'';
+            display: block;
+            width: 0;
+            height: 0;
+            border-top: 20px solid transparent;
+            border-right: 20px solid transparent; 
+            border-left: 20px solid transparent; 
+            border-bottom: 20px solid #FFEAC9;
+            position: absolute;
+            top: -40px;
+            left: calc(50% - 20px);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="cuadro">
+            <h4>hola Mundo</h4>
+        </div>
+    </main>
+</body>
+</html>
