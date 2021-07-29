@@ -241,10 +241,12 @@ body {
 
 .footer {
     width: 100%;
-    height: 30px;
+    height: 220px;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
+    justify-content: space-around;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .footer > a {
