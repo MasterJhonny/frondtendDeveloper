@@ -104,10 +104,20 @@ body {
     content: "";
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top, rgba(6, 13, 23 , 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(to bottom, rgba(6, 13, 23 , 1) 0%, rgba(0, 0, 0, 0) 35%);
     position: absolute;
     top: 0;
 }
+
+.fondo:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(6, 13, 23 , 0.9) 0%, rgba(0, 0, 0, 0) 35%);
+    position: absolute;
+    top: 0;
+}
+
 /* Estilos del main continer */
 .main {
     display: flex;
