@@ -98,18 +98,17 @@ body {
     font-size: 12px;
 }
 .login__container {
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 2px solid #fff;
-    border-radius: 40px;
-    padding: 40px;
     width: 300px;
+    background-color: transparent;
+    border: 0;
+    padding: 20px;
     height: auto;
 }
 
 .login__container__title {
     color: #fff;
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 40px;
     letter-spacing: 1px;
 }
@@ -120,6 +119,7 @@ body {
 }
 
 .input {
+    width: 100%;
     border: 0;
     background-color: transparent;
     color: #fff;
@@ -183,4 +183,29 @@ body {
 }
 .footer > a:hover {
     text-decoration: underline;
+}
+
+@media (min-width: 600px) {
+    .login__container {
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 2px solid #fff;
+        border-radius: 40px;
+        padding: 40px;
+        width: 360px;
+    }
+    .login__container__title {
+        font-size: 18px;
+    }
+    .input {
+        font-size: 16px;
+    }
+    .login__container--register a {
+        font-size: 16px;
+    }
+    .footer {
+        flex-direction: row;
+    }
+    .footer > a {
+        font-size: 14px;
+    }
 }

@@ -8,15 +8,24 @@ html {
     font-family: 'Mulish', sans-serif;
 }
 body {
-    background-color: #7209b7;
+    background-color: #060d17;
 }
 /* estilos del header */
+
 .header {
-    background-color: #7209b7;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+    background-color: #060d17;  
+}
+.headerMain {
     width: 100%;
     height: 80px;
     display: flex;
     justify-content: space-between;
+    z-index: 1;
 }
 
 .header__img {
@@ -79,12 +88,32 @@ body {
 .header__menu--profile:hover .header__menu ul {
     display: block;
 }
-
+.fondo {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url("https://estaticos.muyinteresante.es/uploads/images/pyr/55b1e1ab3dafe88aab94679b/pelicula-terror_0.jpg");
+    background-position: right 25%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.fondo:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(6, 13, 23 , 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+    position: absolute;
+    top: 0;
+}
 /* Estilos del main continer */
 .main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 /* Primera section buscador */
 .section {
@@ -108,7 +137,7 @@ body {
     border-radius: 20px;
     border: 2.5px solid #fff;
     outline: none;
-    background-color: rgba(255,255,255, 0.1);
+    background-color: rgba(0,0,0, 0.2);
     padding-left: 45px; 
     font-size: 16px;
     font-weight: 500;
@@ -129,6 +158,17 @@ body {
 ::placeholder {
     color: #fff;
 }
+/* title carousel */
+
+.carousel__title {
+    width:100%;
+    color: #fff;
+    font-size: 16px;
+    padding-left: 40px;
+    position: absolute;
+    top: 30px;
+    
+}
 
 /* second section carousel */
 .carousel {
@@ -147,7 +187,8 @@ body {
 .item {
     display: inline-block;
     width: 200px;
-    height: 300px;
+    height: 280px;
+    overflow: hidden;
     background-color:#ef233c;
     border-radius: 20px;
     margin-right: 10px;
@@ -172,6 +213,8 @@ body {
 .item__img {
     width: 100%;
     border-radius: 20px;
+    position: absolute;
+    bottom: 0;
     object-fit: cover;
 }
 
@@ -209,10 +252,16 @@ body {
         width: 200px;
         height: auto;
     }
+    .section {
+        margin-top: 180px;
+    }
     .section__title {
         font-size: 24px;
     }
     .header__menu--profile img {
         width: 40px;
+    }
+    .fondo {
+        height: calc(100vh - 230px);
     }
 }
