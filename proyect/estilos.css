@@ -188,20 +188,21 @@ body::-webkit-scrollbar-thumb {
     color: #fff;
     font-size: 16px;
     padding-left: 40px;
-    position: absolute;
-    top: 0;
-    
+    margin-bottom: -40px;
 }
-
+.margin_top {
+    margin-top: 60px;
+} 
 /* second section carousel */
 .carousel {
     width: 90%;
-    height: 420px;
+    height: 435px;
     overflow-x: scroll;
     overflow-y: hidden;
     padding:30px 30px 0px 30px;
     position: relative;
 }
+
 .carousel::-webkit-scrollbar {
     visibility: hidden;
     height: 7px;
