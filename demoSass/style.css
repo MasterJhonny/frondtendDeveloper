@@ -1,0 +1,78 @@
+.flex, .main, .fana, .botones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.text, p {
+  color: color1;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+}
+
+.main {
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.fana {
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+
+.botones {
+  width: 100%;
+  height: 300px;
+  background-color: #d87f4c;
+}
+
+.btn__fana {
+  color: #fff;
+  background-color: #512D6D;
+  padding: 7px 10px;
+  border-radius: 20px;
+  border: 2px solid #512D6D;
+}
+
+.btn__fana:hover {
+  background-color: #001E6C;
+  border: 2px solid #fff;
+}
+
+.btn__demo {
+  color: #fff;
+  background-color: #141E61;
+  padding: 7px 10px;
+  border-radius: 20px;
+  border: 2px solid #141E61;
+}
+
+.btn__demo:hover {
+  background-color: #0F044C;
+  border: 2px solid #fff;
+}
+
+.btn__sus {
+  color: #fff;
+  background-color: #FF6767;
+  padding: 7px 10px;
+  border-radius: 20px;
+  border: 2px solid #FF6767;
+}
+
+.btn__sus:hover {
+  background-color: #FF3D68;
+  border: 2px solid #fff;
+}
+/*# sourceMappingURL=style.css.map */

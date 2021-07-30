@@ -1,0 +1,199 @@
+.flex, .main, .demo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: #eb8a6c;
+}
+
+.demo {
+  width: 100%;
+  height: 300px;
+  background-color: #F0D9E7;
+}
+
+.btn {
+  color: #fff;
+  padding: 7px 10px;
+  margin-left: 5px;
+  border-radius: 20px;
+  font-weight: bold;
+  border: 0;
+  background-color: #BCFFB9;
+  border: 2px solid #BCFFB9;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #28FFBF;
+  border: 2px solid #fff;
+}
+
+.btn__sus {
+  color: #fff;
+  padding: 7px 10px;
+  margin-left: 5px;
+  border-radius: 20px;
+  font-weight: bold;
+  border: 0;
+  background-color: #36b436;
+  border: 2px solid #36b436;
+  cursor: pointer;
+}
+
+.btn__sus:hover {
+  background-color: green;
+  border: 2px solid #fff;
+}
+
+.btn__fana {
+  color: #fff;
+  padding: 7px 10px;
+  margin-left: 5px;
+  border-radius: 20px;
+  font-weight: bold;
+  border: 0;
+  background-color: #001E6C;
+  border: 2px solid #001E6C;
+  cursor: pointer;
+}
+
+.btn__fana:hover {
+  background-color: #035397;
+  border: 2px solid #fff;
+}
+
+.btn__demo {
+  color: #fff;
+  padding: 7px 10px;
+  margin-left: 5px;
+  border-radius: 20px;
+  font-weight: bold;
+  border: 0;
+  background-color: #C400FF;
+  border: 2px solid #C400FF;
+  cursor: pointer;
+}
+
+.btn__demo:hover {
+  background-color: #cf94c6;
+  border: 2px solid #fff;
+}
+
+.btn__mus {
+  color: #fff;
+  padding: 7px 10px;
+  margin-left: 5px;
+  border-radius: 20px;
+  font-weight: bold;
+  border: 0;
+  background-color: #DF5E5E;
+  border: 2px solid #DF5E5E;
+  cursor: pointer;
+}
+
+.btn__mus:hover {
+  background-color: #DF5E5E;
+  border: 2px solid #fff;
+}
+
+.btn__num {
+  color: #fff;
+  padding: 7px 10px;
+  margin-left: 5px;
+  border-radius: 20px;
+  font-weight: bold;
+  border: 0;
+  background-color: #171010;
+  border: 2px solid #171010;
+  cursor: pointer;
+}
+
+.btn__num:hover {
+  background-color: #362222;
+  border: 2px solid #fff;
+}
+
+.texto, .card p, .card1 p, .card2 p, .card3 p, .card4 p {
+  font-size: 12px;
+  font-family: 'Mulish', sans-serif;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+}
+
+.card {
+  width: 150px;
+  height: 150px;
+  margin: 4px;
+  background: url("https://cdn.pixabay.com/photo/2015/07/19/09/47/still-life-851296_960_720.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  position: relative;
+}
+
+.card1 {
+  width: 150px;
+  height: 150px;
+  margin: 4px;
+  background: url("https://cdn.pixabay.com/photo/2015/05/31/14/23/organizer-791939_960_720.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  position: relative;
+}
+
+.card2 {
+  width: 150px;
+  height: 150px;
+  margin: 4px;
+  background: url("https://cdn.pixabay.com/photo/2020/09/15/09/10/church-5573087_960_720.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  position: relative;
+}
+
+.card3 {
+  width: 150px;
+  height: 150px;
+  margin: 4px;
+  background: url("https://cdn.pixabay.com/photo/2021/06/27/14/32/raspberry-6368999_960_720.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  position: relative;
+}
+
+.card4 {
+  width: 150px;
+  height: 150px;
+  margin: 4px;
+  background: url("https://cdn.pixabay.com/photo/2021/07/26/14/30/woman-6494461_960_720.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  position: relative;
+}
+/*# sourceMappingURL=style.css.map */

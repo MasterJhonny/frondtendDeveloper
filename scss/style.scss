@@ -1,0 +1,115 @@
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.main {
+    @extend .flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: #eb8a6c;
+}
+
+.demo {
+    @extend .flex;
+    width: 100%;
+    height: 300px;
+    background-color: #F0D9E7;
+}
+@mixin boton($color, $background, $hoverColor) {
+    color: $color;
+    padding: 7px 10px;
+    margin-left: 5px;
+    border-radius: 20px;
+    font-weight: bold;
+    border: 0;
+    background-color: $background;
+    border: 2px solid $background;
+    cursor: pointer;
+    &:hover {
+        background-color: $hoverColor;
+        border: 2px solid #fff;
+    }
+}
+
+@mixin box($url) {
+    width: 150px;
+    height: 150px;
+    margin: 4px;
+    background: url($url);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    position: relative;
+}
+.btn {
+    @include boton(#fff,#BCFFB9, #28FFBF);
+}
+
+.btn__sus {
+    @include boton(#fff, rgb(54, 180, 54), green);
+}
+
+.btn__fana {
+    @include boton(#fff, #001E6C, #035397)
+}
+
+.btn__demo {
+    @include boton(#fff, #C400FF, #cf94c6)
+}
+
+.btn__mus {
+    @include boton(#fff, #DF5E5E, #DF5E5E)
+}
+
+.btn__num {
+    @include boton(#fff, #171010, #362222)
+}
+
+.texto {
+    font-size: 12px;
+    font-family: 'Mulish', sans-serif;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
+
+.card {
+    @include box('https://cdn.pixabay.com/photo/2015/07/19/09/47/still-life-851296_960_720.jpg')
+    p {
+       @extend .texto;
+    }
+}
+
+.card1 {
+    @include box('https://cdn.pixabay.com/photo/2015/05/31/14/23/organizer-791939_960_720.jpg')
+    p {
+        @extend .texto;
+     }
+}
+
+.card2 {
+    @include box('https://cdn.pixabay.com/photo/2020/09/15/09/10/church-5573087_960_720.jpg')
+    p {
+        @extend .texto;
+     }
+}
+
+.card3 {
+    @include box('https://cdn.pixabay.com/photo/2021/06/27/14/32/raspberry-6368999_960_720.png')
+    p {
+        @extend .texto;
+     }
+}
+.card4 {
+    @include box('https://cdn.pixabay.com/photo/2021/07/26/14/30/woman-6494461_960_720.jpg')
+    p {
+        @extend .texto;
+     }
+}

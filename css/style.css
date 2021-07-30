@@ -1,0 +1,65 @@
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eb8a6c; }
+
+.btn {
+  color: #fff;
+  padding: 7px 10px;
+  margin-left: 5px;
+  border-radius: 20px;
+  font-weight: bold;
+  border: 0;
+  background-color: #BCFFB9;
+  border: 2px solid #BCFFB9;
+  cursor: pointer; }
+  .btn:hover {
+    background-color: #28FFBF;
+    border: 2px solid #fff; }
+
+.btn__sus {
+  color: #fff;
+  padding: 7px 10px;
+  margin-left: 5px;
+  border-radius: 20px;
+  font-weight: bold;
+  border: 0;
+  background-color: #36b436;
+  border: 2px solid #36b436;
+  cursor: pointer; }
+  .btn__sus:hover {
+    background-color: green;
+    border: 2px solid #fff; }
+
+.btn__fana {
+  color: #fff;
+  padding: 7px 10px;
+  margin-left: 5px;
+  border-radius: 20px;
+  font-weight: bold;
+  border: 0;
+  background-color: #001E6C;
+  border: 2px solid #001E6C;
+  cursor: pointer; }
+  .btn__fana:hover {
+    background-color: #035397;
+    border: 2px solid #fff; }
+
+.btn__demo {
+  color: #fff;
+  padding: 7px 10px;
+  margin-left: 5px;
+  border-radius: 20px;
+  font-weight: bold;
+  border: 0;
+  background-color: #C400FF;
+  border: 2px solid #C400FF;
+  cursor: pointer; }
+  .btn__demo:hover {
+    background-color: #cf94c6;
+    border: 2px solid #fff; }
+
+/*# sourceMappingURL=style.css.map */
